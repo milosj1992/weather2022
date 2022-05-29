@@ -1,0 +1,130 @@
+.App {
+  text-align: center;
+  max-width: 1024px;
+  margin: auto;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.SearchField{
+  display: flex;
+  background-color: orange;
+  padding: 20px 100px;
+  justify-content: center;
+}
+.SearchField input{
+  border-radius: 20px 0 0 20px;
+  padding: 7px 7px 7px 12px;
+  border: 0;
+}
+.SearchField button{
+  background-color: orangered;
+  border-radius: 0 20px 20px 0;
+  border-width: 0;
+  color: white;
+}
+
+.right-side-undersearch{
+  display: flex;
+  flex-direction: column;
+}
+.country-n-city{
+  margin-right: 5px;
+}
+.country-n-city a{
+  color: #e96e50;
+}
+.left-side-undersearch{
+  background-color: lightyellow;
+}
+.weather-header{
+  margin-left: 5px;
+}
+.weather-header p{
+  color: #48484A;
+  font-weight: bold;
+}
+.weather-header p,.country-n-city p{
+  margin: 0;
+}
+.temp-inmap-wrapper{
+  display: flex;
+  margin: 10px 0;
+  gap:20px;
+  border-top: 1px solid #ddd;
+}
+.left-side-undersearch{
+  width: 50px;
+}
+.right-side-undersearch{
+  width: calc(100% - 50px);
+}
+.span-cels{
+  display: inline-block;
+  min-width: 10px;
+  padding: 3px 7px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1;
+  vertical-align: baseline;
+  white-space: nowrap;
+  text-align: center;
+  background-color: #4e4d4a;
+  border-radius: 10px;
+}
+.footer-undersearch p{
+  margin: 0;
+}
+.footer-undersearch a{
+  color:#e96e50
+}
+.footer-city{
+  display: flex;
+  gap: 5px;
+}
+.light-cels,.header-city p{
+  color: lightgrey;
+}
+.bold-cels{
+  color:blaCK;
+  font-weight: bold;
+}
+.next-map-wrapper{
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+}
