@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import {useCallback, useEffect, useState} from "react";
 import {Home} from "./Home";

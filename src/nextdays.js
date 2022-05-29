@@ -12,10 +12,9 @@ const timeConverter = (timestamp) => {
 export const Nextdays = () => {
     const [data, setData] = useState([]);
     const location = useLocation();
-    console.log(process.env);
     useEffect(() => {
         fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${location.state.lat}&lon=${location.state.lon}&appid=${process.env.REACT_APP_API_KEY}&units=metric`)
-            .then(response => response.json()).then(response => setData(response));
+            .then(response => response.json()).then(response => setData(response)).catch(err => {console.log(err)});
 
     }, [])
     return (

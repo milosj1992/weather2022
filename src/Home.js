@@ -14,7 +14,7 @@ export const Home = () => {
     }
     const submitCity = async (url) => {
         fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${url}&limit=5&&appid=${process.env.REACT_APP_API_KEY}`)
-            .then(response => response.json()).then(response => setListCity(response));
+            .then(response => response.json()).then(response => setListCity(response)).catch(err => {console.log(err)});
         setDisplayW(true);
     };
     return (

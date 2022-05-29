@@ -6,7 +6,7 @@ export const UnderSearchView = ({lat, lon}) => {
     const [data, setData] = useState([]);
     useEffect(() => {
         fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${process.env.REACT_APP_API_KEY}&units=metric`)
-            .then(response => response.json()).then(response => setData(response));
+            .then(response => response.json()).then(response => setData(response)).catch(err => {console.log(err)});
     }, [lat, lon])
     return (
         <div className="view-temp-wrapper">
